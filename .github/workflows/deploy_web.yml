@@ -13,19 +13,17 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-      
+      - name: Write .env
+        run: echo "${{ secrets.DOT_ENV }}" > app/.env
       - name: Install Flutter
         uses: subosito/flutter-action@v2
         with:
           channel: 'stable'
-
       - name: Install dependencies
         run: flutter pub get
-
       # See stackoverflow.com/questions/74164386/flutter-web-shows-blank-page-on-github-deployment
       - name: Install and Build 
         run: flutter build web --release --web-renderer html
-
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
