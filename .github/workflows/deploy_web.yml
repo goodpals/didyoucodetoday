@@ -23,7 +23,7 @@ jobs:
         run: flutter pub get
       # See stackoverflow.com/questions/74164386/flutter-web-shows-blank-page-on-github-deployment
       - name: Install and Build 
-        run: flutter build web --release --web-renderer html
+        run: flutter build web --release --web-renderer html --base-href /didyoucodetoday/
       - name: Deploy to Github Pages
         uses: JamesIves/github-pages-deploy-action@v4
         with:
