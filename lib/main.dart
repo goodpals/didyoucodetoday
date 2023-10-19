@@ -8,7 +8,8 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  final env = await loadDotEnv();
+  // final env = await loadDotEnv();
+  final env = tempEnvironment();
 
   await Supabase.initialize(
     url: env.supabaseUrl,
