@@ -1,0 +1,3 @@
+there's a script that builds and deploys on pushes to main.
+if you run it locally you need to be in debug mode and you need to make a .env file and put it in the root of the directory, it can be empty.
+.env doesn't work on web but i haven't removed the mechanism yet (i replaced it with a hack ayy lmao)
