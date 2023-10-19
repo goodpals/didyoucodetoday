@@ -31,7 +31,9 @@ class AuthController extends Cubit<AppAuthState> {
   void loginGithub() async {
     await supabase.auth.signInWithOAuth(
       Provider.github,
-      redirectTo: kIsWeb ? null : 'io.supabase.flutter://callback',
+      redirectTo:
+          kDebugMode ? null : 'https://goodpals.github.io/didyoucodetoday/',
+      // redirectTo: kIsWeb ? null : 'io.supabase.flutter://callback',
     );
   }
 
