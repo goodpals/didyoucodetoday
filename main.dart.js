@@ -42399,7 +42399,7 @@ var $async$y6=A.K(function(a,b){if(a===1)return A.G(b,r)
 while(true)switch(s){case 0:p=q.x.Q
 p===$&&A.a()
 s=2
-return A.D(A.HP(p,B.IV,null),$async$y6)
+return A.D(A.HP(p,B.IV,"https://goodpals.github.io/didyoucodetoday/"),$async$y6)
 case 2:return A.H(null,r)}})
 return A.I($async$y6,r)},
 y7(){var s=0,r=A.J(t.z),q=this,p
@@ -74984,19 +74984,20 @@ return A.I($async$tm,r)},
 vd(a,b,c,d){return this.a47(a,b,c,d)},
 a47(a,b,c,d){var s=0,r=A.J(t.PN),q,p=this,o,n,m,l,k
 var $async$vd=A.K(function(e,f){if(e===1)return A.G(f,r)
-while(true)switch(s){case 0:m=t.N
-l=A.ah(["provider",B.b.gM(a.G().split("."))],m,m)
-k=p.ch
-s=k===B.ed?3:4
+while(true)switch(s){case 0:l=t.N
+k=A.ah(["provider",B.b.gM(a.G().split("."))],l,l)
+k.l(0,"redirect_to",c)
+o=p.ch
+s=o===B.ed?3:4
 break
-case 3:o=A.aKU()
+case 3:n=A.aKU()
 s=5
-return A.D(p.ay.pl("supabase.auth.token-code-verifier",o),$async$vd)
-case 5:n=B.kG.bg(B.hd.bg(o))
-l.K(0,A.ah(["flow_type",k.b,"code_challenge",B.k9.gj5().bg(n.a).split("=")[0],"code_challenge_method","s256"],m,m))
-case 4:m=A.q1(null,null,l).f
-if(m==null)m=""
-q=new A.Jc(p.e+"/authorize?"+m)
+return A.D(p.ay.pl("supabase.auth.token-code-verifier",n),$async$vd)
+case 5:m=B.kG.bg(B.hd.bg(n))
+k.K(0,A.ah(["flow_type",o.b,"code_challenge",B.k9.gj5().bg(m.a).split("=")[0],"code_challenge_method","s256"],l,l))
+case 4:l=A.q1(null,null,k).f
+if(l==null)l=""
+q=new A.Jc(p.e+"/authorize?"+l)
 s=1
 break
 case 1:return A.H(q,r)}})
